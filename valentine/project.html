@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentine untuk Indah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page1">
+    
+
+
+    <div class="flowers"></div>
+
+    <div class="header">
+        <h1>Indah Dwi Agustin 💌</h1>
+    </div
+
+    <div class="container">
+        <div class="envelope" onclick="openLetter()">
+            <div class="letter">
+                <p>Happy Valentine indah cantik, Terimakasih sudah menjadi teman yang baik</p>
+                <button class="closeBtn" onclick="closeLetter(event)">Masukkan kembali ✉️</button>
+            </div>
+        </div>
+
+        <button onclick="nextPage()">Lihat Kenangan 📷</button>
+    </div>
+
+    <script>
+        const envelope = document.querySelector('.envelope');
+        function openLetter(){ envelope.classList.add('open'); document.getElementById('music').play(); }
+        function closeLetter(e){ e.stopPropagation(); envelope.classList.remove('open'); }
+        function nextPage(){ window.location.href='page2.html'; }
+
+        // animasi bunga
+        for(let i=0;i<25;i++){
+            const petal = document.createElement('div');
+            petal.className='petal';
+            petal.style.left=Math.random()*100+'%';
+            petal.style.animationDuration=3+Math.random()*5+'s';
+            document.querySelector('.flowers').appendChild(petal);
+        }
+    </script>
+
+</body>
+</html>

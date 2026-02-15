@@ -1,0 +1,69 @@
+/* ========================== */
+/* PAGE 2 - KENANGAN */
+/* ========================== */
+body.page2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 80px;
+}
+
+/* Judul & tulisan baikan */
+body.page2 h1 {
+    font-size: 40px;
+    color: #e75480;
+    margin-bottom: 20px;
+}
+
+body.page2 .baikan {
+    font-size: 32px;
+    color: #e75480;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease;
+}
+
+body.page2 .desc {
+    font-size: 18px;
+    color: #555;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Galeri foto */
+body.page2 .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+body.page2 .gallery img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* Tombol kembali */
+body.page2 button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #ff6f91;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+body.page2 button:hover {
+    background: #ff3e6c;
+    transform: scale(1.05);
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
